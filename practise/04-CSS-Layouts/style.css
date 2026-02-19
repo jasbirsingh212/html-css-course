@@ -290,3 +290,17 @@ nav p {
   display: block;
   clear: both;
 }
+
+article {
+  float: left;
+  width: 800px;
+}
+
+aside {
+  float: right;
+  width: 325px;
+}
+
+footer {
+  clear: both;
+}
