@@ -272,3 +272,21 @@ nav p {
   top: 20px;
   right: 40px;
 } */
+
+.container {
+  width: 1200px;
+}
+
+.main-heading {
+  float: left;
+}
+
+.nav-bar {
+  float: right;
+}
+
+.main-header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
