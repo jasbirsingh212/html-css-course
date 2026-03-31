@@ -276,31 +276,31 @@ nav p {
 .container {
   width: 1200px;
 }
-
+/* 
 .main-heading {
   float: left;
-}
+} */
 
-.nav-bar {
+/* .nav-bar {
   float: right;
-}
+} */
 
-.main-header::after {
+/* .main-header::after {
   content: "";
   display: block;
   clear: both;
-}
+} */
 
-article {
+/* article {
   float: left;
   width: 800px;
-}
+} */
 
-aside {
+/* aside {
   float: right;
   width: 325px;
-}
+} */
 
-footer {
+/* footer {
   clear: both;
-}
+} */
