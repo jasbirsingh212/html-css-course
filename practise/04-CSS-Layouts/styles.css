@@ -1,0 +1,210 @@
+/* =========================
+   RESET
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* =========================
+   PRODUCT WRAPPER
+========================= */
+.product {
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+  border: 3px solid #000;
+  background: #fff;
+}
+
+/* =========================
+   BADGE
+========================= */
+.product__badge {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background: #e53935;
+  color: #fff;
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* =========================
+   CARD
+========================= */
+.product__card {
+  display: flex;
+  gap: 20px;
+  /* padding: 20px; */
+}
+
+/* =========================
+   IMAGE
+========================= */
+.product__image img {
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   CONTENT
+========================= */
+.product__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #f5f5f5;
+}
+
+/* =========================
+   INFO SECTION
+========================= */
+.product__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 20px;
+}
+
+/* LEFT */
+.product__left {
+  flex: 1;
+}
+
+.product__price-row {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 10px;
+}
+
+.product__price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.product__shipping {
+  font-size: 12px;
+  color: #777;
+  font-weight: bold;
+}
+
+.product__description {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.product__link {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #000;
+  text-decoration: underline;
+}
+
+/* COLORS */
+.product__colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.color--black {
+  background: #000;
+}
+.color--blue {
+  background: #3b5bdb;
+}
+.color--red {
+  background: #e03131;
+}
+.color--yellow {
+  background: #f08c00;
+}
+.color--green {
+  background: #2f9e44;
+}
+.color--brown {
+  background: #8d5524;
+}
+
+/* RIGHT */
+.product__right {
+  flex: 1;
+  margin-top: 5px;
+}
+
+.product__details-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product__details {
+  list-style: square;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.product__btn {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product__btn:hover {
+  background: #333;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .product__card {
+    flex-direction: column;
+  }
+
+  .product__info {
+    flex-direction: column;
+  }
+
+  .product__image img {
+    width: 100%;
+  }
+}
