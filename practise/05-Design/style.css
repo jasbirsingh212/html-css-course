@@ -217,3 +217,39 @@ footer {
   letter-spacing: -0.7px;
   color: var(--color-gray-light);
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  header,
+  section {
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 48px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    grid-template-columns: 1fr;
+    row-gap: 48px;
+  }
+
+  .testimonial-box {
+    grid-column: auto;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+}
